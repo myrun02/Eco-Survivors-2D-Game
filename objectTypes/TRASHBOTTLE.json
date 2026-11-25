@@ -1,0 +1,68 @@
+{
+	"name": "TRASHBOTTLE",
+	"plugin-id": "Sprite",
+	"sid": 409660638688911,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 442,
+						"height": 292,
+						"originX": 0.497737556561086,
+						"originY": 0.4914383561643836,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 199920,
+						"collisionPoly": {
+							"points": [
+								0.5837104072398189,
+								0.010273972602739725,
+								0.7104072398190047,
+								0.09931506849315068,
+								0.995475113122172,
+								0.5582191780821918,
+								0.9411764705882353,
+								0.8424657534246576,
+								0.7285067873303167,
+								0.9965753424657534,
+								0.10407239819004525,
+								0.8938356164383562,
+								0.04072398190045249,
+								0.8493150684931506,
+								0.004524886877828055,
+								0.7431506849315068,
+								0.00904977375565611,
+								0.4726027397260274,
+								0.027149321266968326,
+								0.4178082191780822,
+								0.16515837104072398,
+								0.2226027397260274,
+								0.32805429864253394,
+								0.05821917808219178
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 371746101674845,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

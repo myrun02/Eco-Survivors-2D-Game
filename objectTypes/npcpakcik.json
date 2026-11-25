@@ -1,0 +1,62 @@
+{
+	"name": "npcpakcik",
+	"plugin-id": "Sprite",
+	"sid": 880018509438763,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 62,
+						"height": 80,
+						"originX": 0.5161290322580645,
+						"originY": 0.475,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 6399467,
+						"collisionPoly": {
+							"points": [
+								0.6339767672841906,
+								0.01748046875,
+								0.8413654618473896,
+								0.118994140625,
+								0.9790128254955304,
+								0.7329101562500001,
+								0.6688474327417195,
+								0.979443359375,
+								0.46696463272444627,
+								0.96494140625,
+								0.21369348361186682,
+								0.91337890625,
+								0.12559917087705666,
+								0.7876953125000001,
+								0.03199896359632076,
+								0.283349609375,
+								0.47247052727037164,
+								0.020703125
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 600995025298492,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

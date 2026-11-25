@@ -1,0 +1,64 @@
+{
+	"name": "METAL",
+	"plugin-id": "Sprite",
+	"sid": 865578331294110,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 180,
+						"height": 192,
+						"originX": 0.49444444444444446,
+						"originY": 0.5104166666666666,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 3459982,
+						"collisionPoly": {
+							"points": [
+								1,
+								0,
+								1,
+								0.14583333333333334,
+								1,
+								0.24479166666666666,
+								1,
+								0.6145833333333334,
+								1,
+								0.9114583333333334,
+								1,
+								1,
+								0.3055555555555556,
+								1,
+								0.016666666666666666,
+								0.9010416666666666,
+								0.05555555555555555,
+								0.2760416666666667,
+								0.6166666666666667,
+								0
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 947525021767185,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -1,0 +1,23 @@
+{
+	"name": "bggame2",
+	"plugin-id": "TiledBg",
+	"sid": 931125620315747,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 1708,
+		"height": 960,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"fileType": "image/png",
+		"imageSpriteId": 2788531,
+		"useCollisionPoly": true,
+		"tag": ""
+	}
+}

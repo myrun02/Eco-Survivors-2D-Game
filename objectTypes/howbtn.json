@@ -1,0 +1,60 @@
+{
+	"name": "howbtn",
+	"plugin-id": "Sprite",
+	"sid": 424522216601335,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 637,
+						"height": 204,
+						"originX": 0.5023547880690737,
+						"originY": 0.4215686274509804,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 514084,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								0.9638932496075353,
+								0.25,
+								0.9843014128728415,
+								0.4852941176470588,
+								0.9199372056514914,
+								1,
+								0,
+								1,
+								0,
+								1,
+								0,
+								0.20098039215686275,
+								0,
+								0
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 938276119850310,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

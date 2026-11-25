@@ -1,0 +1,63 @@
+{
+	"name": "lantai",
+	"plugin-id": "Sprite",
+	"sid": 478903319803558,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 333140007852663
+		},
+		{
+			"behaviorId": "jumpthru",
+			"name": "Jumpthru",
+			"sid": 572350848659989
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1909,
+						"height": 187,
+						"originX": 0.5,
+						"originY": -1.2112299465240643,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 7897162,
+						"collisionPoly": {
+							"points": [
+								0.0005238344683080147,
+								0.0053475935828877,
+								0.9994761655316919,
+								0.0053475935828877,
+								0.9994761655316919,
+								0.9946524064171123,
+								0.0005238344683080147,
+								0.9946524064171123
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 629700214307219,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
