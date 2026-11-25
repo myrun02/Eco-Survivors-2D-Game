@@ -1,0 +1,1491 @@
+{
+	"name": "Event GAME2",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "water",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 108657861687496
+		},
+		{
+			"eventType": "variable",
+			"name": "air",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 331326545706760
+		},
+		{
+			"eventType": "variable",
+			"name": "sun",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 470435155068175
+		},
+		{
+			"eventType": "variable",
+			"name": "plant",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 296896788974762
+		},
+		{
+			"eventType": "variable",
+			"name": "GAMESPEED",
+			"type": "number",
+			"initialValue": "300",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 795173589826522
+		},
+		{
+			"eventType": "variable",
+			"name": "RandomObstacles",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 610942325492450
+		},
+		{
+			"eventType": "variable",
+			"name": "RandomItems",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 839521926164852
+		},
+		{
+			"eventType": "variable",
+			"name": "playershealth",
+			"type": "number",
+			"initialValue": "3",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 160989425259305
+		},
+		{
+			"eventType": "variable",
+			"name": "portalready",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 166948949508888
+		},
+		{
+			"eventType": "variable",
+			"name": "spawnobstacle",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 300411868968278
+		},
+		{
+			"eventType": "variable",
+			"name": "spawncollectable",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 246239433468611
+		},
+		{
+			"eventType": "variable",
+			"name": "canmove",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 203344776390520
+		},
+		{
+			"eventType": "variable",
+			"name": "gameover",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 912345678901234
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 767741943326578
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 521602095599150,
+					"parameters": {
+						"variable": "air",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 444362930085525,
+					"parameters": {
+						"variable": "plant",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 459033726138066,
+					"parameters": {
+						"variable": "sun",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 961496873615739,
+					"parameters": {
+						"variable": "water",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 755628971742727,
+					"parameters": {
+						"variable": "playershealth",
+						"value": "3"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 994166718384072,
+					"parameters": {
+						"variable": "RandomObstacles",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 336522078938639,
+					"parameters": {
+						"variable": "RandomItems",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 201177227748189,
+					"parameters": {
+						"variable": "spawnobstacle",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 766395946142062,
+					"parameters": {
+						"variable": "spawncollectable",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 972051995083553,
+					"parameters": {
+						"variable": "canmove",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 240743370060399,
+					"parameters": {
+						"variable": "portalready",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 912345678901235,
+					"parameters": {
+						"variable": "gameover",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "portal2",
+					"sid": 684221116169554,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-collisions-enabled",
+					"objectClass": "portal2",
+					"sid": 881130835888363,
+					"parameters": {
+						"collisions": "disabled"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite17",
+					"sid": 340875437938198,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 909360829458801
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "MASTER SPAWNER & MOVEMENT",
+			"description": "Single shared timer so items and obstacles never overlap",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 912345678901236,
+							"parameters": {
+								"variable": "spawnobstacle",
+								"comparison": 0,
+								"value": "1"
+							}
+						},
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 649337606529393,
+							"parameters": {
+								"interval-seconds": "random(1.0, 2.0)"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 912345678901237,
+							"parameters": {
+								"variable": "RandomItems",
+								"value": "choose(1, 1, 2, 2, 3, 3, 4, 4, 5, 6, 7)"
+							}
+						}
+					],
+					"sid": 912345678901245,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 912345678901238,
+									"parameters": {
+										"variable": "RandomItems",
+										"comparison": 0,
+										"value": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 164453327679802,
+									"parameters": {
+										"object-to-create": "watah",
+										"layer": "0",
+										"x": "LayoutWidth+120",
+										"y": "lantai.BBoxTop-watah.Height/2",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								}
+							],
+							"sid": 459067905701853
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 912345678901239,
+									"parameters": {
+										"variable": "RandomItems",
+										"comparison": 0,
+										"value": "2"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 739704285627988,
+									"parameters": {
+										"object-to-create": "angin",
+										"layer": "0",
+										"x": "LayoutWidth+120",
+										"y": "lantai.BBoxTop-angin.Height/2",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								}
+							],
+							"sid": 826710641455602
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 912345678901240,
+									"parameters": {
+										"variable": "RandomItems",
+										"comparison": 0,
+										"value": "3"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 306893755208359,
+									"parameters": {
+										"object-to-create": "pokoks",
+										"layer": "0",
+										"x": "LayoutWidth+120",
+										"y": "lantai.BBoxTop-pokoks.Height/2",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								}
+							],
+							"sid": 161092697644454
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 912345678901241,
+									"parameters": {
+										"variable": "RandomItems",
+										"comparison": 0,
+										"value": "4"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 850886729580331,
+									"parameters": {
+										"object-to-create": "matahari",
+										"layer": "0",
+										"x": "LayoutWidth+120",
+										"y": "lantai.BBoxTop-matahari.Height/2",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								}
+							],
+							"sid": 983742332668792
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 912345678901242,
+									"parameters": {
+										"variable": "RandomItems",
+										"comparison": 0,
+										"value": "5"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 163497596099286,
+									"parameters": {
+										"object-to-create": "firered",
+										"layer": "0",
+										"x": "LayoutWidth+100",
+										"y": "lantai.BBoxTop-firered.Height/2",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								}
+							],
+							"sid": 404855913684657
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 912345678901243,
+									"parameters": {
+										"variable": "RandomItems",
+										"comparison": 0,
+										"value": "6"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 748413416400369,
+									"parameters": {
+										"object-to-create": "toxicgallen",
+										"layer": "0",
+										"x": "LayoutWidth+120",
+										"y": "lantai.BBoxTop-toxicgallen.Height-30",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								}
+							],
+							"sid": 513719655433133
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 912345678901244,
+									"parameters": {
+										"variable": "RandomItems",
+										"comparison": 0,
+										"value": "7"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 378830647722634,
+									"parameters": {
+										"object-to-create": "smoke",
+										"layer": "0",
+										"x": "LayoutWidth+120",
+										"y": "lantai.BBoxTop-smoke.Height-30",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								}
+							],
+							"sid": 911967695449917
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 463331058689426
+						}
+					],
+					"actions": [
+						{
+							"id": "set-x",
+							"objectClass": "watah",
+							"sid": 755005452452633,
+							"parameters": {
+								"x": "watah.X-GAMESPEED*dt"
+							}
+						},
+						{
+							"id": "set-x",
+							"objectClass": "angin",
+							"sid": 878649588944822,
+							"parameters": {
+								"x": "angin.X-GAMESPEED*dt"
+							}
+						},
+						{
+							"id": "set-x",
+							"objectClass": "matahari",
+							"sid": 680841466415464,
+							"parameters": {
+								"x": "matahari.X-GAMESPEED*dt"
+							}
+						},
+						{
+							"id": "set-x",
+							"objectClass": "pokoks",
+							"sid": 105645154019851,
+							"parameters": {
+								"x": "pokoks.X-GAMESPEED*dt"
+							}
+						},
+						{
+							"id": "set-x",
+							"objectClass": "smoke",
+							"sid": 809867117936462,
+							"parameters": {
+								"x": "smoke.X-GAMESPEED*dt"
+							}
+						},
+						{
+							"id": "set-x",
+							"objectClass": "toxicgallen",
+							"sid": 949939838938721,
+							"parameters": {
+								"x": "toxicgallen.X-GAMESPEED*dt"
+							}
+						},
+						{
+							"id": "set-x",
+							"objectClass": "firered",
+							"sid": 901424113797235,
+							"parameters": {
+								"x": "firered.X-GAMESPEED*dt"
+							}
+						}
+					],
+					"sid": 814957403259223
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-x",
+							"objectClass": "watah",
+							"sid": 878619624899257,
+							"parameters": {
+								"comparison": 2,
+								"x-co-ordinate": "-100"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "watah",
+							"sid": 976635421151322
+						}
+					],
+					"sid": 546802752918485
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-x",
+							"objectClass": "pokoks",
+							"sid": 376206810818321,
+							"parameters": {
+								"comparison": 2,
+								"x-co-ordinate": "-100"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "pokoks",
+							"sid": 582818133075925
+						}
+					],
+					"sid": 923724448202971
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-x",
+							"objectClass": "angin",
+							"sid": 470046032368097,
+							"parameters": {
+								"comparison": 2,
+								"x-co-ordinate": "-100"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "angin",
+							"sid": 271139812506534
+						}
+					],
+					"sid": 198783247261554
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-x",
+							"objectClass": "matahari",
+							"sid": 269156217303831,
+							"parameters": {
+								"comparison": 2,
+								"x-co-ordinate": "-100"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "matahari",
+							"sid": 598076961509837
+						}
+					],
+					"sid": 534629738605970
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-x",
+							"objectClass": "firered",
+							"sid": 547794239508659,
+							"parameters": {
+								"comparison": 2,
+								"x-co-ordinate": "-100"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "firered",
+							"sid": 195288486148915
+						}
+					],
+					"sid": 785723543811231
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-x",
+							"objectClass": "smoke",
+							"sid": 901952034894018,
+							"parameters": {
+								"comparison": 2,
+								"x-co-ordinate": "-100"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "smoke",
+							"sid": 385895863549007
+						}
+					],
+					"sid": 368261625742934
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-x",
+							"objectClass": "toxicgallen",
+							"sid": 235718602863509,
+							"parameters": {
+								"comparison": 2,
+								"x-co-ordinate": "-100"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "toxicgallen",
+							"sid": 793006419359756
+						}
+					],
+					"sid": 218869553791290
+				}
+			],
+			"sid": 963558926528403
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "PLAYER & HUD",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 821766873730938,
+							"parameters": {
+								"key": 87
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "Aplayer2",
+							"sid": 579638176022981,
+							"behaviorType": "Platform",
+							"parameters": {
+								"control": "jump"
+							}
+						}
+					],
+					"sid": 782681167308357
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 151194263291091,
+							"parameters": {
+								"key": 68
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "Aplayer2",
+							"sid": 266231880266667,
+							"behaviorType": "Platform",
+							"parameters": {
+								"control": "right"
+							}
+						}
+					],
+					"sid": 169186784419727
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 448736491791892,
+							"parameters": {
+								"key": 65
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "Aplayer2",
+							"sid": 581853181560256,
+							"behaviorType": "Platform",
+							"parameters": {
+								"control": "left"
+							}
+						}
+					],
+					"sid": 830039279677650
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Aplayer2",
+							"sid": 673338203249610,
+							"parameters": {
+								"object": "watah"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "play-by-name",
+							"objectClass": "Audio",
+							"sid": 348334239007355,
+							"parameters": {
+								"folder": "sounds",
+								"audio-file-name": "\"coin\"",
+								"loop": "not-looping",
+								"volume": "20",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 359101939750965,
+							"parameters": {
+								"variable": "water",
+								"value": "1"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "watah",
+							"sid": 159613901202472
+						}
+					],
+					"sid": 652943174125771
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Aplayer2",
+							"sid": 416890742579944,
+							"parameters": {
+								"object": "pokoks"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "play-by-name",
+							"objectClass": "Audio",
+							"sid": 264391157935648,
+							"parameters": {
+								"folder": "sounds",
+								"audio-file-name": "\"coin\"",
+								"loop": "not-looping",
+								"volume": "20",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 387314475635378,
+							"parameters": {
+								"variable": "plant",
+								"value": "1"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "pokoks",
+							"sid": 545510173582790
+						}
+					],
+					"sid": 706444831826865
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Aplayer2",
+							"sid": 720929284308156,
+							"parameters": {
+								"object": "matahari"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "play-by-name",
+							"objectClass": "Audio",
+							"sid": 620917320063155,
+							"parameters": {
+								"folder": "sounds",
+								"audio-file-name": "\"coin\"",
+								"loop": "not-looping",
+								"volume": "20",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 976189900803297,
+							"parameters": {
+								"variable": "sun",
+								"value": "1"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "matahari",
+							"sid": 570111852188486
+						}
+					],
+					"sid": 728084223893761
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Aplayer2",
+							"sid": 938648216249002,
+							"parameters": {
+								"object": "angin"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "play-by-name",
+							"objectClass": "Audio",
+							"sid": 510052066664037,
+							"parameters": {
+								"folder": "sounds",
+								"audio-file-name": "\"coin\"",
+								"loop": "not-looping",
+								"volume": "20",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 508875034649934,
+							"parameters": {
+								"variable": "air",
+								"value": "1"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "angin",
+							"sid": 285821542117565
+						}
+					],
+					"sid": 836182058720212
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 912345678901247
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Sprite13",
+							"sid": 771483175350903,
+							"parameters": {
+								"animation": "str(min(water, 10))",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Sprite14",
+							"sid": 445119473236249,
+							"parameters": {
+								"animation": "str(min(air, 10))",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Sprite15",
+							"sid": 536953075449625,
+							"parameters": {
+								"animation": "str(min(sun, 10))",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Sprite16",
+							"sid": 356936145931893,
+							"parameters": {
+								"animation": "str(min(plant, 10))",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "NYAWA",
+							"sid": 167402753574968,
+							"parameters": {
+								"animation": "str(max(playershealth, 0))",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 416144388201638
+				}
+			],
+			"sid": 672628970178110
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "DAMAGE & GAME OVER",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Aplayer2",
+							"sid": 749671997420656,
+							"parameters": {
+								"object": "toxicgallen"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "play-by-name",
+							"objectClass": "Audio",
+							"sid": 298019115811466,
+							"parameters": {
+								"folder": "sounds",
+								"audio-file-name": "\"langgar\"",
+								"loop": "not-looping",
+								"volume": "20",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 409056293845930,
+							"parameters": {
+								"variable": "playershealth",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 652432026961883
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Aplayer2",
+							"sid": 318453008534796,
+							"parameters": {
+								"object": "firered"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "play-by-name",
+							"objectClass": "Audio",
+							"sid": 496879044626084,
+							"parameters": {
+								"folder": "sounds",
+								"audio-file-name": "\"langgar\"",
+								"loop": "not-looping",
+								"volume": "20",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 735118225199732,
+							"parameters": {
+								"variable": "playershealth",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 455775395461347
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Aplayer2",
+							"sid": 367690234520205,
+							"parameters": {
+								"object": "smoke"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "play-by-name",
+							"objectClass": "Audio",
+							"sid": 884008724182615,
+							"parameters": {
+								"folder": "sounds",
+								"audio-file-name": "\"langgar\"",
+								"loop": "not-looping",
+								"volume": "20",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 209263164485135,
+							"parameters": {
+								"variable": "playershealth",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 796083224633285
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 272136803340056,
+							"parameters": {
+								"variable": "playershealth",
+								"comparison": 3,
+								"value": "0"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 912345678901248,
+							"parameters": {
+								"variable": "gameover",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 912345678901249,
+							"parameters": {
+								"variable": "gameover",
+								"value": "1"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 912345678901250,
+							"parameters": {
+								"variable": "spawnobstacle",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "NYAWA",
+							"sid": 861621387750628,
+							"parameters": {
+								"animation": "\"0\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 621116936348765,
+							"parameters": {
+								"seconds": "1.5",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 692703808884894,
+							"parameters": {
+								"layout": "END"
+							}
+						}
+					],
+					"sid": 487607155087383
+				}
+			],
+			"sid": 882794107042499
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 912345678901251,
+					"parameters": {
+						"variable": "portalready",
+						"comparison": 0,
+						"value": "0"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 689777645993862,
+					"parameters": {
+						"variable": "air",
+						"comparison": 5,
+						"value": "10"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 242258727439231,
+					"parameters": {
+						"variable": "sun",
+						"comparison": 5,
+						"value": "10"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 142452478356055,
+					"parameters": {
+						"variable": "water",
+						"comparison": 5,
+						"value": "10"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 118448241907966,
+					"parameters": {
+						"variable": "plant",
+						"comparison": 5,
+						"value": "10"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 887061320043874,
+					"parameters": {
+						"variable": "portalready",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 788060512130916,
+					"parameters": {
+						"variable": "spawncollectable",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 891465969590948,
+					"parameters": {
+						"variable": "spawnobstacle",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 930417801545935,
+					"parameters": {
+						"variable": "canmove",
+						"value": "1"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "firered",
+					"sid": 137376073491350
+				},
+				{
+					"id": "destroy",
+					"objectClass": "smoke",
+					"sid": 593062523819479
+				},
+				{
+					"id": "destroy",
+					"objectClass": "toxicgallen",
+					"sid": 689785185726334
+				},
+				{
+					"id": "destroy",
+					"objectClass": "watah",
+					"sid": 919134377105744
+				},
+				{
+					"id": "destroy",
+					"objectClass": "angin",
+					"sid": 428151710602803
+				},
+				{
+					"id": "destroy",
+					"objectClass": "pokoks",
+					"sid": 234114853137645
+				},
+				{
+					"id": "destroy",
+					"objectClass": "matahari",
+					"sid": 292230895706790
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 334494661103686,
+					"parameters": {
+						"object-to-create": "portal2",
+						"layer": "0",
+						"x": "LayoutWidth-250",
+						"y": "lantai.Y-portal2.Height/9",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "portal2",
+					"sid": 916637605149738,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-collisions-enabled",
+					"objectClass": "portal2",
+					"sid": 870540389407741,
+					"parameters": {
+						"collisions": "enabled"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite17",
+					"sid": 152899193453662,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "Sprite17",
+					"sid": 631521746831657,
+					"parameters": {
+						"x": "portal2.X",
+						"y": "portal2.Y-180"
+					}
+				}
+			],
+			"sid": 148236254476856
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Aplayer2",
+					"sid": 415606559848074,
+					"parameters": {
+						"object": "portal2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play-by-name",
+					"objectClass": "Audio",
+					"sid": 709244946234822,
+					"parameters": {
+						"folder": "sounds",
+						"audio-file-name": "\"teleport\"",
+						"loop": "not-looping",
+						"volume": "20",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 770326478834623,
+					"parameters": {
+						"layout": "GAME3"
+					}
+				}
+			],
+			"sid": 244093455123115
+		}
+	],
+	"sid": 597134384806259
+}

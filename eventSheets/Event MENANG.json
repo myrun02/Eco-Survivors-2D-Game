@@ -1,0 +1,218 @@
+{
+	"name": "Event MENANG",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 940497018296067,
+					"parameters": {
+						"object": "home2"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-scale",
+					"objectClass": "home2",
+					"sid": 775169585149190,
+					"parameters": {
+						"scale": "0.7"
+					}
+				}
+			],
+			"sid": 427252248250185
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 757588282625562,
+					"parameters": {
+						"object": "retry2"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-scale",
+					"objectClass": "retry2",
+					"sid": 245022329526259,
+					"parameters": {
+						"scale": ".7"
+					}
+				}
+			],
+			"sid": 632671532001377
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 917461249364157,
+					"parameters": {
+						"object": "home2"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 731698884149277
+				}
+			],
+			"actions": [
+				{
+					"id": "play-by-name",
+					"objectClass": "Audio",
+					"sid": 683168321973025,
+					"parameters": {
+						"folder": "sounds",
+						"audio-file-name": "\"hover\"",
+						"loop": "not-looping",
+						"volume": "20",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "set-scale",
+					"objectClass": "home2",
+					"sid": 859889193683027,
+					"parameters": {
+						"scale": ".8"
+					}
+				}
+			],
+			"sid": 843011455318553
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 870123025218652,
+					"parameters": {
+						"object": "retry2"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 521778994270230
+				}
+			],
+			"actions": [
+				{
+					"id": "play-by-name",
+					"objectClass": "Audio",
+					"sid": 440780952094942,
+					"parameters": {
+						"folder": "sounds",
+						"audio-file-name": "\"hover\"",
+						"loop": "not-looping",
+						"volume": "20",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "set-scale",
+					"objectClass": "retry2",
+					"sid": 507801639344657,
+					"parameters": {
+						"scale": ".8"
+					}
+				}
+			],
+			"sid": 341019633334553
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 482772445299173,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "home2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play-by-name",
+					"objectClass": "Audio",
+					"sid": 630136501194056,
+					"parameters": {
+						"folder": "sounds",
+						"audio-file-name": "\"click\"",
+						"loop": "not-looping",
+						"volume": "20",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 108234161338213,
+					"parameters": {
+						"layout": "HOME"
+					}
+				}
+			],
+			"sid": 715738407021023
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 227692484798095,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "retry2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play-by-name",
+					"objectClass": "Audio",
+					"sid": 308615156005925,
+					"parameters": {
+						"folder": "sounds",
+						"audio-file-name": "\"click\"",
+						"loop": "not-looping",
+						"volume": "20",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 981634523971559,
+					"parameters": {
+						"layout": "GAME1"
+					}
+				}
+			],
+			"sid": 237664313571791
+		}
+	],
+	"sid": 945418207683686
+}

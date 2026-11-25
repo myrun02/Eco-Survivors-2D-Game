@@ -1,0 +1,513 @@
+{
+	"name": "Event HOME",
+	"events": [
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "MOUSE HOVER",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 675722394951040,
+							"parameters": {
+								"object": "startbtn"
+							}
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 569181316750893
+						}
+					],
+					"actions": [
+						{
+							"id": "play-by-name",
+							"objectClass": "Audio",
+							"sid": 923116253880823,
+							"parameters": {
+								"folder": "sounds",
+								"audio-file-name": "\"hover\"",
+								"loop": "not-looping",
+								"volume": "20",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "set-scale",
+							"objectClass": "startbtn",
+							"sid": 222583937176168,
+							"parameters": {
+								"scale": "0.55"
+							}
+						}
+					],
+					"sid": 890303342552271
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 775417159977771,
+							"parameters": {
+								"object": "startbtn"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-scale",
+							"objectClass": "startbtn",
+							"sid": 307142732452965,
+							"parameters": {
+								"scale": "0.5"
+							}
+						}
+					],
+					"sid": 661168666895710
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 235952996386935,
+							"parameters": {
+								"object": "howbtn"
+							}
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 429947304165443
+						}
+					],
+					"actions": [
+						{
+							"id": "set-scale",
+							"objectClass": "howbtn",
+							"sid": 362105736536006,
+							"parameters": {
+								"scale": "0.65"
+							}
+						},
+						{
+							"id": "play-by-name",
+							"objectClass": "Audio",
+							"sid": 305168071901746,
+							"parameters": {
+								"folder": "sounds",
+								"audio-file-name": "\"hover\"",
+								"loop": "not-looping",
+								"volume": "20",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 991252636406200
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 476536052497852,
+							"parameters": {
+								"object": "howbtn"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-scale",
+							"objectClass": "howbtn",
+							"sid": 607770770649308,
+							"parameters": {
+								"scale": "0.6"
+							}
+						}
+					],
+					"sid": 675182711615227
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 566413319467405,
+							"parameters": {
+								"object": "aboutbtn"
+							}
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 932840796074010
+						}
+					],
+					"actions": [
+						{
+							"id": "set-scale",
+							"objectClass": "aboutbtn",
+							"sid": 884489529197479,
+							"parameters": {
+								"scale": "0.8"
+							}
+						},
+						{
+							"id": "play-by-name",
+							"objectClass": "Audio",
+							"sid": 314288536917651,
+							"parameters": {
+								"folder": "sounds",
+								"audio-file-name": "\"hover\"",
+								"loop": "not-looping",
+								"volume": "20",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 885317976970674
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 401555791722747,
+							"parameters": {
+								"object": "aboutbtn"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-scale",
+							"objectClass": "aboutbtn",
+							"sid": 633895405116360,
+							"parameters": {
+								"scale": "0.7"
+							}
+						}
+					],
+					"sid": 466469237258644
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 611960619602274,
+							"parameters": {
+								"object": "exitbtn"
+							}
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 462455218313125
+						}
+					],
+					"actions": [
+						{
+							"id": "set-scale",
+							"objectClass": "exitbtn",
+							"sid": 186863076170991,
+							"parameters": {
+								"scale": "1.05"
+							}
+						}
+					],
+					"sid": 534597173616926
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 796477629250091,
+							"parameters": {
+								"object": "exitbtn"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-scale",
+							"objectClass": "exitbtn",
+							"sid": 235014079028556,
+							"parameters": {
+								"scale": "1"
+							}
+						}
+					],
+					"sid": 842567961659123
+				}
+			],
+			"sid": 690334179454791
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "MOUSE CLICK",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 916150633817584,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "startbtn"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "play-by-name",
+							"objectClass": "Audio",
+							"sid": 676877482944968,
+							"parameters": {
+								"folder": "sounds",
+								"audio-file-name": "\"click\"",
+								"loop": "not-looping",
+								"volume": "20",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 231058516724815,
+							"parameters": {
+								"layout": "GAME1"
+							}
+						}
+					],
+					"sid": 912530208059386
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 318819646955718,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "howbtn"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "play-by-name",
+							"objectClass": "Audio",
+							"sid": 541429934332314,
+							"parameters": {
+								"folder": "sounds",
+								"audio-file-name": "\"click\"",
+								"loop": "not-looping",
+								"volume": "20",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"callFunction": "HOWLAYOUT",
+							"sid": 446684923722778
+						}
+					],
+					"sid": 455316782576761
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 457567274135745,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "aboutbtn"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 584782856908272
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 662344579491284,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "exitbtn"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 867673068490199
+				}
+			],
+			"sid": 401528671923044
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "FUNCTIONS",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"functionName": "HOMELAYOUT",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionCopyPicked": false,
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 526682361675103,
+							"parameters": {
+								"layout": "HOME"
+							}
+						}
+					],
+					"sid": 321525628567778
+				},
+				{
+					"functionName": "ENDLAYOUT",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionCopyPicked": false,
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 118954315162141,
+							"parameters": {
+								"layout": "MENANG"
+							}
+						}
+					],
+					"sid": 413606563735259
+				},
+				{
+					"functionName": "HOWLAYOUT",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionCopyPicked": false,
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 431086041302616,
+							"parameters": {
+								"layout": "HOW"
+							}
+						}
+					],
+					"sid": 390405972717134
+				},
+				{
+					"functionName": "GAMELAYOUT",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionCopyPicked": false,
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 939242075717971,
+							"parameters": {
+								"layout": "GAME1"
+							}
+						}
+					],
+					"sid": 543392541516166
+				}
+			],
+			"sid": 882956447647377
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 558411938963371
+				}
+			],
+			"actions": [
+				{
+					"id": "play-by-name",
+					"objectClass": "Audio",
+					"sid": 436149821721433,
+					"parameters": {
+						"folder": "sounds",
+						"audio-file-name": "\"main\"",
+						"loop": "looping",
+						"volume": "20",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 396428129772522
+		}
+	],
+	"sid": 370375551416386
+}

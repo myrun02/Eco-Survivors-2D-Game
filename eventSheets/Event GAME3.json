@@ -1,0 +1,2045 @@
+{
+	"name": "Event GAME3",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "kuasa",
+			"type": "number",
+			"initialValue": "1",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 914176511588177
+		},
+		{
+			"eventType": "variable",
+			"name": "nyawa",
+			"type": "number",
+			"initialValue": "9",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 421007876695763
+		},
+		{
+			"eventType": "variable",
+			"name": "ENEMY",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 597004657227922
+		},
+		{
+			"eventType": "variable",
+			"name": "nyawatoxic",
+			"type": "number",
+			"initialValue": "9",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 306678024000019
+		},
+		{
+			"eventType": "variable",
+			"name": "nyawaApi",
+			"type": "number",
+			"initialValue": "9",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 932569440670464
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 511993777782162,
+					"parameters": {
+						"key": 68
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "Aplayer",
+					"sid": 638270275172479,
+					"behaviorType": "8Direction",
+					"parameters": {
+						"control": "right"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Aplayer",
+					"sid": 164177681760854,
+					"parameters": {
+						"animation": "\"kanan\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 726838871075676
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-released",
+					"objectClass": "Keyboard",
+					"sid": 443852549518963,
+					"parameters": {
+						"key": 68
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Aplayer",
+					"sid": 335781561380685,
+					"parameters": {
+						"animation": "\"IDLE\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 919282518513502
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 731129456210850,
+					"parameters": {
+						"key": 65
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "Aplayer",
+					"sid": 290308577093038,
+					"behaviorType": "8Direction",
+					"parameters": {
+						"control": "left"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Aplayer",
+					"sid": 219599694203088,
+					"parameters": {
+						"animation": "\"kiri\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 536639314718564
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-released",
+					"objectClass": "Keyboard",
+					"sid": 790640221845050,
+					"parameters": {
+						"key": 65
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Aplayer",
+					"sid": 582514337150802,
+					"parameters": {
+						"animation": "\"IDLE\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 953052648929246
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 752445859722483,
+					"parameters": {
+						"key": 87
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "Aplayer",
+					"sid": 544934292749130,
+					"behaviorType": "Platform",
+					"parameters": {
+						"control": "jump"
+					}
+				}
+			],
+			"sid": 853783257174289
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-released",
+					"objectClass": "Keyboard",
+					"sid": 340721058250440,
+					"parameters": {
+						"key": 87
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Aplayer",
+					"sid": 958367569186178,
+					"parameters": {
+						"animation": "\"IDLE\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 306020935371088
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "POWER",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 203789133621612,
+							"parameters": {
+								"key": 49
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 968547650441122,
+							"parameters": {
+								"variable": "kuasa",
+								"value": "1"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "watah",
+							"sid": 102597616748465,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "pokoks",
+							"sid": 754830289030137,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "matahari",
+							"sid": 494619022950676,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "angin",
+							"sid": 647275692965145,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 735174500481307
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 573684643013225,
+							"parameters": {
+								"key": 32
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 921275176806333,
+							"parameters": {
+								"variable": "kuasa",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "play-by-name",
+							"objectClass": "Audio",
+							"sid": 610601270580995,
+							"parameters": {
+								"folder": "sounds",
+								"audio-file-name": "\"attack\"",
+								"loop": "not-looping",
+								"volume": "20",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "spawn-another-object",
+							"objectClass": "Aplayer",
+							"sid": 260074752420413,
+							"parameters": {
+								"object": "kuasaAir",
+								"layer": "1",
+								"image-point": "1",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Aplayer",
+							"sid": 888911341755595,
+							"parameters": {
+								"animation": "\"ATCK 2\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 178981557349518
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 979447807331356,
+							"parameters": {
+								"key": 50
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 718143146428302,
+							"parameters": {
+								"variable": "kuasa",
+								"value": "2"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "watah",
+							"sid": 239896181778534,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "pokoks",
+							"sid": 855236177553646,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "matahari",
+							"sid": 957587533223045,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "angin",
+							"sid": 337065484349933,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 156888330143907
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 380781479548648,
+							"parameters": {
+								"key": 32
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 707705297598436,
+							"parameters": {
+								"variable": "kuasa",
+								"comparison": 0,
+								"value": "2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "play-by-name",
+							"objectClass": "Audio",
+							"sid": 973409019873146,
+							"parameters": {
+								"folder": "sounds",
+								"audio-file-name": "\"attack\"",
+								"loop": "not-looping",
+								"volume": "20",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "spawn-another-object",
+							"objectClass": "Aplayer",
+							"sid": 949796348297081,
+							"parameters": {
+								"object": "kuasaAngin",
+								"layer": "1",
+								"image-point": "1",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Aplayer",
+							"sid": 593067279600818,
+							"parameters": {
+								"animation": "\"ATCK 2\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 606417676832458
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 970327107097438,
+							"parameters": {
+								"key": 51
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 180234222329443,
+							"parameters": {
+								"variable": "kuasa",
+								"value": "3"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "watah",
+							"sid": 834220429427740,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "pokoks",
+							"sid": 310535674924457,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "matahari",
+							"sid": 653205314391262,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "angin",
+							"sid": 794548182670583,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 190961610387523
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 858645456241258,
+							"parameters": {
+								"key": 32
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 843907841458874,
+							"parameters": {
+								"variable": "kuasa",
+								"comparison": 0,
+								"value": "3"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "play-by-name",
+							"objectClass": "Audio",
+							"sid": 551544719753770,
+							"parameters": {
+								"folder": "sounds",
+								"audio-file-name": "\"attack\"",
+								"loop": "not-looping",
+								"volume": "20",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "spawn-another-object",
+							"objectClass": "Aplayer",
+							"sid": 132064849256461,
+							"parameters": {
+								"object": "kuasaCahaya",
+								"layer": "1",
+								"image-point": "1",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Aplayer",
+							"sid": 676978358989560,
+							"parameters": {
+								"animation": "\"ATCK 2\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 492090817301670
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 484175418725085,
+							"parameters": {
+								"key": 52
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 189462302503397,
+							"parameters": {
+								"variable": "kuasa",
+								"value": "4"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "watah",
+							"sid": 876706709418224,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "pokoks",
+							"sid": 979568866529148,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "matahari",
+							"sid": 426324386330755,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "angin",
+							"sid": 555822516893736,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 835050427253387
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 405707794417973,
+							"parameters": {
+								"key": 32
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 180247262483661,
+							"parameters": {
+								"variable": "kuasa",
+								"comparison": 0,
+								"value": "4"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "play-by-name",
+							"objectClass": "Audio",
+							"sid": 659860104257739,
+							"parameters": {
+								"folder": "sounds",
+								"audio-file-name": "\"attack\"",
+								"loop": "not-looping",
+								"volume": "20",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "spawn-another-object",
+							"objectClass": "Aplayer",
+							"sid": 919149117690178,
+							"parameters": {
+								"object": "kuasaNature",
+								"layer": "1",
+								"image-point": "1",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Aplayer",
+							"sid": 169460860578492,
+							"parameters": {
+								"animation": "\"ATCK 2\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 650718300711332
+				}
+			],
+			"sid": 588814075592696
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "NYAWA",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 368777716894847,
+							"parameters": {
+								"variable": "nyawa",
+								"comparison": 0,
+								"value": "9"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "hpnyawa",
+							"sid": 204583319156797,
+							"parameters": {
+								"animation": "\"9\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 342057770278282
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 512798596505323,
+							"parameters": {
+								"variable": "nyawa",
+								"comparison": 0,
+								"value": "8"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "hpnyawa",
+							"sid": 522314639122635,
+							"parameters": {
+								"animation": "\"8\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 692295197025192
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 930032605581241,
+							"parameters": {
+								"variable": "nyawa",
+								"comparison": 0,
+								"value": "7"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "hpnyawa",
+							"sid": 990664958192237,
+							"parameters": {
+								"animation": "\"7\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 227561918582708
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 557650146036098,
+							"parameters": {
+								"variable": "nyawa",
+								"comparison": 0,
+								"value": "6"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "hpnyawa",
+							"sid": 966107606821027,
+							"parameters": {
+								"animation": "\"6\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 997767044311650
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 305417092502159,
+							"parameters": {
+								"variable": "nyawa",
+								"comparison": 0,
+								"value": "5"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "hpnyawa",
+							"sid": 980234278906575,
+							"parameters": {
+								"animation": "\"5\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 568010960724237
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 256724522199234,
+							"parameters": {
+								"variable": "nyawa",
+								"comparison": 0,
+								"value": "4"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "hpnyawa",
+							"sid": 441892278368297,
+							"parameters": {
+								"animation": "\"4\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 171810368572691
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 989380181686507,
+							"parameters": {
+								"variable": "nyawa",
+								"comparison": 0,
+								"value": "3"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "hpnyawa",
+							"sid": 364477860433036,
+							"parameters": {
+								"animation": "\"3\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 780766777992703
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 822998688076345,
+							"parameters": {
+								"variable": "nyawa",
+								"comparison": 0,
+								"value": "2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "hpnyawa",
+							"sid": 399264196714652,
+							"parameters": {
+								"animation": "\"2\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 615885043206368
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 208725937443548,
+							"parameters": {
+								"variable": "nyawa",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "hpnyawa",
+							"sid": 596033915712630,
+							"parameters": {
+								"animation": "\"1\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 594445703832625
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 496661605544656,
+							"parameters": {
+								"variable": "nyawa",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "hpnyawa",
+							"sid": 437007903337565,
+							"parameters": {
+								"animation": "\"0\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 182377745950321,
+							"parameters": {
+								"layout": "END"
+							}
+						}
+					],
+					"sid": 862953055654400
+				}
+			],
+			"sid": 220706154750022
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "TOXIC MONSTER",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Aplayer",
+							"sid": 683066424683773,
+							"parameters": {
+								"object": "TOCISSPIT"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "TOCISSPIT",
+							"sid": 318670260870109
+						},
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 702548383483078,
+							"parameters": {
+								"variable": "nyawa",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 492265996203746
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "enemyToxic",
+							"sid": 217894106419569,
+							"parameters": {
+								"object": "kuasaNature"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 653789907473696,
+							"parameters": {
+								"variable": "nyawatoxic",
+								"value": "1"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "kuasaNature",
+							"sid": 790475716638369
+						}
+					],
+					"sid": 766149762647591
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "enemyToxic",
+							"sid": 297752584700333,
+							"parameters": {
+								"object": "kuasaCahaya"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 236126331797999,
+							"parameters": {
+								"variable": "nyawatoxic",
+								"value": "1"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "kuasaCahaya",
+							"sid": 717219503053692
+						}
+					],
+					"sid": 326619181392782
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 525045731299238,
+							"parameters": {
+								"variable": "nyawatoxic",
+								"comparison": 0,
+								"value": "9"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "ENEMY1",
+							"sid": 962872455735070,
+							"parameters": {
+								"animation": "\"9\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 899023499608888
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 860579700132828,
+							"parameters": {
+								"variable": "nyawatoxic",
+								"comparison": 0,
+								"value": "8"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "ENEMY1",
+							"sid": 609874675879592,
+							"parameters": {
+								"animation": "\"8\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 196607759461544
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 587322867785529,
+							"parameters": {
+								"variable": "nyawatoxic",
+								"comparison": 0,
+								"value": "7"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "ENEMY1",
+							"sid": 113499390612914,
+							"parameters": {
+								"animation": "\"7\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 570047507841707
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 558622169826983,
+							"parameters": {
+								"variable": "nyawatoxic",
+								"comparison": 0,
+								"value": "6"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "ENEMY1",
+							"sid": 522192365184309,
+							"parameters": {
+								"animation": "\"6\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 399874917691021
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 939250541177586,
+							"parameters": {
+								"variable": "nyawatoxic",
+								"comparison": 0,
+								"value": "5"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "ENEMY1",
+							"sid": 397037586737472,
+							"parameters": {
+								"animation": "\"5\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 999435565901420
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 452272536330470,
+							"parameters": {
+								"variable": "nyawatoxic",
+								"comparison": 0,
+								"value": "4"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "ENEMY1",
+							"sid": 167525935381745,
+							"parameters": {
+								"animation": "\"4\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 789579585384518
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 331764210675993,
+							"parameters": {
+								"variable": "nyawatoxic",
+								"comparison": 0,
+								"value": "3"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "ENEMY1",
+							"sid": 362753493798153,
+							"parameters": {
+								"animation": "\"3\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 382020042998753
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 477698752470902,
+							"parameters": {
+								"variable": "nyawatoxic",
+								"comparison": 0,
+								"value": "2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "ENEMY1",
+							"sid": 913380251670814,
+							"parameters": {
+								"animation": "\"2\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 395662709510604
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 686800316306175,
+							"parameters": {
+								"variable": "nyawatoxic",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "ENEMY1",
+							"sid": 480508600303166,
+							"parameters": {
+								"animation": "\"1\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 230324293433233
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 341454826063489,
+							"parameters": {
+								"variable": "nyawatoxic",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "ENEMY1",
+							"sid": 987153460093926,
+							"parameters": {
+								"animation": "\"0\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "enemyToxic",
+							"sid": 738596370226799,
+							"parameters": {
+								"animation": "\"Death\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 455331737273663,
+							"parameters": {
+								"seconds": "3",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "enemyToxic",
+							"sid": 609514421466388
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 264033997043843,
+							"parameters": {
+								"variable": "ENEMY",
+								"value": "1"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 362448238728697,
+							"parameters": {
+								"seconds": "2",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "ENEMY1",
+							"sid": 119792649192432,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "ENEMY2",
+							"sid": 777541143777395,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 625274174226666
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 842700581040511,
+							"parameters": {
+								"interval-seconds": "2"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 424381621990693,
+							"parameters": {
+								"variable": "nyawatoxic",
+								"comparison": 4,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "spawn-another-object",
+							"objectClass": "enemyToxic",
+							"sid": 291722194916691,
+							"parameters": {
+								"object": "TOCISSPIT",
+								"layer": "1",
+								"image-point": "1",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "set-angle-toward-position",
+							"objectClass": "TOCISSPIT",
+							"sid": 619316416721321,
+							"parameters": {
+								"x": "Aplayer.X",
+								"y": "Aplayer.Y"
+							}
+						}
+					],
+					"sid": 203519822394213
+				}
+			],
+			"sid": 850085025513369
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "FIRE SPIRIT",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 813408038503924,
+							"parameters": {
+								"variable": "ENEMY",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "enemyApi",
+							"sid": 336511199340866,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "enemyApi",
+							"sid": 116528740214015,
+							"parameters": {
+								"animation": "\"ATTACK\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 503773122028546
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Aplayer",
+							"sid": 253212197615853,
+							"parameters": {
+								"object": "FIREBALL"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "FIREBALL",
+							"sid": 354546608227966
+						},
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 997565226811947,
+							"parameters": {
+								"variable": "nyawa",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 753217540703867
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "enemyApi",
+							"sid": 176597256488589,
+							"parameters": {
+								"object": "kuasaAir"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 938141781966377,
+							"parameters": {
+								"variable": "nyawaApi",
+								"value": "1"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "kuasaAir",
+							"sid": 576177938824277
+						}
+					],
+					"sid": 699300890523454
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "enemyApi",
+							"sid": 502584912964749,
+							"parameters": {
+								"object": "kuasaAngin"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 326481611694450,
+							"parameters": {
+								"variable": "nyawaApi",
+								"value": "1"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "kuasaAngin",
+							"sid": 790574444172829
+						}
+					],
+					"sid": 544327397428463
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 582281187919884,
+							"parameters": {
+								"variable": "nyawaApi",
+								"comparison": 0,
+								"value": "9"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "ENEMY2",
+							"sid": 612487668654500,
+							"parameters": {
+								"animation": "\"9\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 706830419142511
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 658084262769664,
+							"parameters": {
+								"variable": "nyawaApi",
+								"comparison": 0,
+								"value": "8"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "ENEMY2",
+							"sid": 191102295523811,
+							"parameters": {
+								"animation": "\"8\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 136553150223103
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 125289387241751,
+							"parameters": {
+								"variable": "nyawaApi",
+								"comparison": 0,
+								"value": "7"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "ENEMY2",
+							"sid": 221712006415998,
+							"parameters": {
+								"animation": "\"7\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 377499100302010
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 567873010842116,
+							"parameters": {
+								"variable": "nyawaApi",
+								"comparison": 0,
+								"value": "6"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "ENEMY2",
+							"sid": 675640513529038,
+							"parameters": {
+								"animation": "\"6\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 808891552192056
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 357201574576065,
+							"parameters": {
+								"variable": "nyawaApi",
+								"comparison": 0,
+								"value": "5"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "ENEMY2",
+							"sid": 174654695836276,
+							"parameters": {
+								"animation": "\"5\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 712515696943416
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 468264746091336,
+							"parameters": {
+								"variable": "nyawaApi",
+								"comparison": 0,
+								"value": "4"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "ENEMY2",
+							"sid": 603165004710309,
+							"parameters": {
+								"animation": "\"4\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 222853428038808
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 241792557718455,
+							"parameters": {
+								"variable": "nyawaApi",
+								"comparison": 0,
+								"value": "3"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "ENEMY2",
+							"sid": 366770436064817,
+							"parameters": {
+								"animation": "\"3\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 106669818871350
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 474521471045763,
+							"parameters": {
+								"variable": "nyawaApi",
+								"comparison": 0,
+								"value": "2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "ENEMY2",
+							"sid": 509604900109945,
+							"parameters": {
+								"animation": "\"2\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 250460176024338
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 592019552085941,
+							"parameters": {
+								"variable": "nyawaApi",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "ENEMY2",
+							"sid": 901602528353208,
+							"parameters": {
+								"animation": "\"1\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 603493135494604
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 856229210802188,
+							"parameters": {
+								"variable": "nyawaApi",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "ENEMY2",
+							"sid": 215654730928210,
+							"parameters": {
+								"animation": "\"0\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "enemyApi",
+							"sid": 850821883542679,
+							"parameters": {
+								"animation": "\"DEATH\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 209068836194852,
+							"parameters": {
+								"seconds": "4",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "enemyApi",
+							"sid": 758146225968810
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 491091676340663,
+							"parameters": {
+								"seconds": "2",
+								"use-timescale": true
+							}
+						},
+						{
+							"callFunction": "ENDLAYOUT",
+							"sid": 504126202674300
+						}
+					],
+					"sid": 217483400210647
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 752203488719418,
+							"parameters": {
+								"interval-seconds": "2"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 962482748937622,
+							"parameters": {
+								"variable": "ENEMY",
+								"comparison": 0,
+								"value": "1"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 590610633204629,
+							"parameters": {
+								"variable": "nyawaApi",
+								"comparison": 4,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "spawn-another-object",
+							"objectClass": "enemyApi",
+							"sid": 509131101258718,
+							"parameters": {
+								"object": "FIREBALL",
+								"layer": "1",
+								"image-point": "1",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "set-angle-toward-position",
+							"objectClass": "FIREBALL",
+							"sid": 292269132510171,
+							"parameters": {
+								"x": "Aplayer.X",
+								"y": "Aplayer.Y"
+							}
+						}
+					],
+					"sid": 234664961271777
+				}
+			],
+			"sid": 260895090446668
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 931610292933076
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 192268719090946,
+					"parameters": {
+						"variable": "ENEMY",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 919774366103180,
+					"parameters": {
+						"variable": "kuasa",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 901690945635141,
+					"parameters": {
+						"variable": "nyawa",
+						"value": "9"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 298950018097471,
+					"parameters": {
+						"variable": "nyawaApi",
+						"value": "9"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 113335710846319,
+					"parameters": {
+						"variable": "ENEMY",
+						"value": "9"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "ENEMY2",
+					"sid": 276677433831459,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 189317576045171,
+					"parameters": {
+						"seconds": "2",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite9",
+					"sid": 634773475839048,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 147988782679248
+		}
+	],
+	"sid": 714845338656217
+}

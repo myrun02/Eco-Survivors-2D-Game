@@ -1,0 +1,1553 @@
+{
+	"name": "Event GAME1",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "NATURE1",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 571521263109538
+		},
+		{
+			"eventType": "variable",
+			"name": "quest1",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 954167165102946
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "MAIN",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 554171412750249
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layout-scale",
+							"objectClass": "System",
+							"sid": 523729833378585,
+							"parameters": {
+								"scale": "2"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "ecobar",
+							"sid": 335280746547197,
+							"parameters": {
+								"animation": "\"0\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 620535098408603,
+							"parameters": {
+								"variable": "NATURE1",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 990453748854630,
+							"parameters": {
+								"variable": "quest1",
+								"value": "false"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "DIALOGPOKCIK",
+							"sid": 164413163780061,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "yes",
+							"sid": 798727894221555,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "no",
+							"sid": 979732253739186,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "ecobar",
+							"sid": 745411665296040,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "questbox",
+							"sid": 526977299326366,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 652560996518850,
+							"parameters": {
+								"seconds": "3",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Sprite11",
+							"sid": 513599171348898,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 174397542895903
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 757510454155932,
+							"parameters": {
+								"object": "yes"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-scale",
+							"objectClass": "yes",
+							"sid": 546761663566583,
+							"parameters": {
+								"scale": "0.13"
+							}
+						}
+					],
+					"sid": 352906177861304
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 682884575176610,
+							"parameters": {
+								"object": "no"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-scale",
+							"objectClass": "no",
+							"sid": 409747089730295,
+							"parameters": {
+								"scale": "0.13"
+							}
+						}
+					],
+					"sid": 982862057172247
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 934834097264593,
+							"parameters": {
+								"object": "yes"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-scale",
+							"objectClass": "yes",
+							"sid": 738933193325812,
+							"parameters": {
+								"scale": "0.14"
+							}
+						}
+					],
+					"sid": 775255417680675
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 380474806193464,
+							"parameters": {
+								"object": "no"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-scale",
+							"objectClass": "no",
+							"sid": 347757579123677,
+							"parameters": {
+								"scale": "0.14"
+							}
+						}
+					],
+					"sid": 642315600798148
+				}
+			],
+			"sid": 534101993732007
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "PLAYER MOVEMENT",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 180575511981478,
+							"parameters": {
+								"key": 87
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "player",
+							"sid": 821875322944265,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"control": "up"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "player",
+							"sid": 204447443793800,
+							"parameters": {
+								"animation": "\"atasjalan\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 659208105105273
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-released",
+							"objectClass": "Keyboard",
+							"sid": 380684249836277,
+							"parameters": {
+								"key": 87
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "player",
+							"sid": 357252973462337,
+							"parameters": {
+								"animation": "\"atas\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 317882970592582
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 937127210784423,
+							"parameters": {
+								"key": 65
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "player",
+							"sid": 615589600080362,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"control": "left"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "player",
+							"sid": 731105913220593,
+							"parameters": {
+								"animation": "\"kirijalan\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 274329199810430
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-released",
+							"objectClass": "Keyboard",
+							"sid": 367720798568075,
+							"parameters": {
+								"key": 65
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "player",
+							"sid": 759710103705577,
+							"parameters": {
+								"animation": "\"kiri\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 351728675347259
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 228638202057467,
+							"parameters": {
+								"key": 83
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "player",
+							"sid": 708475517193871,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"control": "down"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "player",
+							"sid": 660483853051834,
+							"parameters": {
+								"animation": "\"bawahjalan\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 199548868040551
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-released",
+							"objectClass": "Keyboard",
+							"sid": 610864721413935,
+							"parameters": {
+								"key": 83
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "player",
+							"sid": 140759822463491,
+							"parameters": {
+								"animation": "\"bawah\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 342035464333739
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 651673040734158,
+							"parameters": {
+								"key": 68
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "player",
+							"sid": 535503801277604,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"control": "right"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "player",
+							"sid": 703902171911107,
+							"parameters": {
+								"animation": "\"kananjalan\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 693526756197958
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-released",
+							"objectClass": "Keyboard",
+							"sid": 155193511109200,
+							"parameters": {
+								"key": 68
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "player",
+							"sid": 488819486433791,
+							"parameters": {
+								"animation": "\"kanan\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 958867641129916
+				}
+			],
+			"sid": 434331846036445
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "MAIN GAME",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "player",
+							"sid": 326471260540920,
+							"parameters": {
+								"object": "BOTTLE"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "BOTTLE",
+							"sid": 420340641342182
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 829067402159163,
+							"parameters": {
+								"variable": "NATURE1",
+								"value": "10"
+							}
+						},
+						{
+							"id": "play-by-name",
+							"objectClass": "Audio",
+							"sid": 307552500217662,
+							"parameters": {
+								"folder": "sounds",
+								"audio-file-name": "\"trash\"",
+								"loop": "not-looping",
+								"volume": "20",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 698871360613028
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "player",
+							"sid": 595322734643347,
+							"parameters": {
+								"object": "METAL"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "METAL",
+							"sid": 462593912900879
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 424643651478536,
+							"parameters": {
+								"variable": "NATURE1",
+								"value": "10"
+							}
+						},
+						{
+							"id": "play-by-name",
+							"objectClass": "Audio",
+							"sid": 262811117496129,
+							"parameters": {
+								"folder": "sounds",
+								"audio-file-name": "\"trash\"",
+								"loop": "not-looping",
+								"volume": "20",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 277719813487287
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "player",
+							"sid": 652128670875900,
+							"parameters": {
+								"object": "DUSTBIN"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "DUSTBIN",
+							"sid": 950714207836475
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 145800173360138,
+							"parameters": {
+								"variable": "NATURE1",
+								"value": "10"
+							}
+						},
+						{
+							"id": "play-by-name",
+							"objectClass": "Audio",
+							"sid": 849145632764692,
+							"parameters": {
+								"folder": "sounds",
+								"audio-file-name": "\"trash\"",
+								"loop": "not-looping",
+								"volume": "20",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 102886526609915
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "player",
+							"sid": 321145918305956,
+							"parameters": {
+								"object": "METALTRASH"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "METALTRASH",
+							"sid": 373588065158699
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 816136739716537,
+							"parameters": {
+								"variable": "NATURE1",
+								"value": "10"
+							}
+						},
+						{
+							"id": "play-by-name",
+							"objectClass": "Audio",
+							"sid": 758365417559282,
+							"parameters": {
+								"folder": "sounds",
+								"audio-file-name": "\"trash\"",
+								"loop": "not-looping",
+								"volume": "20",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 260571537806585
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "player",
+							"sid": 300025320189389,
+							"parameters": {
+								"object": "PAPER"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "PAPER",
+							"sid": 544556737410613
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 241525395598652,
+							"parameters": {
+								"variable": "NATURE1",
+								"value": "10"
+							}
+						},
+						{
+							"id": "play-by-name",
+							"objectClass": "Audio",
+							"sid": 203594586288899,
+							"parameters": {
+								"folder": "sounds",
+								"audio-file-name": "\"trash\"",
+								"loop": "not-looping",
+								"volume": "20",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 546529308594131
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "player",
+							"sid": 336157286797632,
+							"parameters": {
+								"object": "SHEET"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "SHEET",
+							"sid": 842713238597559
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 217512724654185,
+							"parameters": {
+								"variable": "NATURE1",
+								"value": "10"
+							}
+						},
+						{
+							"id": "play-by-name",
+							"objectClass": "Audio",
+							"sid": 337134081760756,
+							"parameters": {
+								"folder": "sounds",
+								"audio-file-name": "\"trash\"",
+								"loop": "not-looping",
+								"volume": "20",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 378389032986501
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "player",
+							"sid": 575920712263040,
+							"parameters": {
+								"object": "PLASTIC"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "PLASTIC",
+							"sid": 535897943833349
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 186301924247384,
+							"parameters": {
+								"variable": "NATURE1",
+								"value": "10"
+							}
+						},
+						{
+							"id": "play-by-name",
+							"objectClass": "Audio",
+							"sid": 645185612028408,
+							"parameters": {
+								"folder": "sounds",
+								"audio-file-name": "\"trash\"",
+								"loop": "not-looping",
+								"volume": "20",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 640697092151751
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "player",
+							"sid": 479710371109605,
+							"parameters": {
+								"object": "TOXIC"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "TOXIC",
+							"sid": 744237366356041
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 823264453419587,
+							"parameters": {
+								"variable": "NATURE1",
+								"value": "10"
+							}
+						},
+						{
+							"id": "play-by-name",
+							"objectClass": "Audio",
+							"sid": 475544747517306,
+							"parameters": {
+								"folder": "sounds",
+								"audio-file-name": "\"trash\"",
+								"loop": "not-looping",
+								"volume": "20",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 431386906488373
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "player",
+							"sid": 541234324604182,
+							"parameters": {
+								"object": "TRASHBAG"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "TRASHBAG",
+							"sid": 622372375563571
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 966342494521341,
+							"parameters": {
+								"variable": "NATURE1",
+								"value": "10"
+							}
+						},
+						{
+							"id": "play-by-name",
+							"objectClass": "Audio",
+							"sid": 190329886667755,
+							"parameters": {
+								"folder": "sounds",
+								"audio-file-name": "\"trash\"",
+								"loop": "not-looping",
+								"volume": "20",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 731310948247136
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "player",
+							"sid": 725786197113267,
+							"parameters": {
+								"object": "TRASHBOTTLE"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "TRASHBOTTLE",
+							"sid": 230698713742593
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 844691009101942,
+							"parameters": {
+								"variable": "NATURE1",
+								"value": "10"
+							}
+						},
+						{
+							"id": "play-by-name",
+							"objectClass": "Audio",
+							"sid": 556427138109648,
+							"parameters": {
+								"folder": "sounds",
+								"audio-file-name": "\"trash\"",
+								"loop": "not-looping",
+								"volume": "20",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 686426226311473
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 273144331124555,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "no"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "DIALOGPOKCIK",
+							"sid": 999750363788639,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "yes",
+							"sid": 799759005276894,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "no",
+							"sid": 543706293225026,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 876365279073229
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "player",
+							"sid": 319218034903446,
+							"parameters": {
+								"object": "COLLISIONBOX"
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 396462000436295,
+							"parameters": {
+								"variable": "quest1"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "DIALOGPOKCIK",
+							"sid": 213045752648611,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "yes",
+							"sid": 766837846447255,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "no",
+							"sid": 882452582041879,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Sprite12",
+							"sid": 407889430981920,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 389118656704894
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "player",
+							"sid": 377937095871760,
+							"parameters": {
+								"object": "COLLISIONBOX"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "DIALOGPOKCIK",
+							"sid": 301935694328123,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "yes",
+							"sid": 729206283479740,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "no",
+							"sid": 397510317080942,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Sprite12",
+							"sid": 602903579263221,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 234326639245181
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 436111466937363,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "yes"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 391653159759969,
+							"parameters": {
+								"variable": "quest1",
+								"value": "true"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "ecobar",
+							"sid": 176144791719234,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "questbox",
+							"sid": 940286553206676,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "DIALOGPOKCIK",
+							"sid": 766359922678483,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "yes",
+							"sid": 401063527310764,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "no",
+							"sid": 586147784537069,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Sprite12",
+							"sid": 388918795343943,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 880439793603694
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 933660177005723,
+							"parameters": {
+								"variable": "NATURE1",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "questbox",
+							"sid": 897977826030131,
+							"parameters": {
+								"animation": "\"0\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 835632534053536
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 749062922858712,
+							"parameters": {
+								"variable": "NATURE1",
+								"comparison": 0,
+								"value": "10"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "questbox",
+							"sid": 281537662074958,
+							"parameters": {
+								"animation": "\"1\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 641189073989290
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 444277053814189,
+							"parameters": {
+								"variable": "NATURE1",
+								"comparison": 0,
+								"value": "20"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "questbox",
+							"sid": 403904322711377,
+							"parameters": {
+								"animation": "\"2\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 249015157399054
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 457562895085299,
+							"parameters": {
+								"variable": "NATURE1",
+								"comparison": 0,
+								"value": "30"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "questbox",
+							"sid": 595041639221563,
+							"parameters": {
+								"animation": "\"3\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 790297404928142
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 716817973751291,
+							"parameters": {
+								"variable": "NATURE1",
+								"comparison": 0,
+								"value": "40"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "questbox",
+							"sid": 184828586723205,
+							"parameters": {
+								"animation": "\"4\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 972908627473700
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 767522472539876,
+							"parameters": {
+								"variable": "NATURE1",
+								"comparison": 0,
+								"value": "50"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "questbox",
+							"sid": 932811091867832,
+							"parameters": {
+								"animation": "\"5\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 957473757109208
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 184718478952774,
+							"parameters": {
+								"variable": "NATURE1",
+								"comparison": 0,
+								"value": "60"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "questbox",
+							"sid": 951131280539440,
+							"parameters": {
+								"animation": "\"6\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 342228727710208
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 702836243171881,
+							"parameters": {
+								"variable": "NATURE1",
+								"comparison": 0,
+								"value": "70"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "questbox",
+							"sid": 587960739789188,
+							"parameters": {
+								"animation": "\"7\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 784745635911311
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 635066418166630,
+							"parameters": {
+								"variable": "NATURE1",
+								"comparison": 0,
+								"value": "80"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "questbox",
+							"sid": 428297369189513,
+							"parameters": {
+								"animation": "\"8\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 292794651068141
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 288767993792936,
+							"parameters": {
+								"variable": "NATURE1",
+								"comparison": 0,
+								"value": "90"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "questbox",
+							"sid": 467164361762491,
+							"parameters": {
+								"animation": "\"9\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 312643761648352
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 143129152928810,
+							"parameters": {
+								"variable": "NATURE1",
+								"comparison": 0,
+								"value": "100"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "questbox",
+							"sid": 361351397852122,
+							"parameters": {
+								"animation": "\"10\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 404726203080754,
+							"parameters": {
+								"seconds": "1.5",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 316367645427830,
+							"parameters": {
+								"layout": "GAME1END"
+							}
+						}
+					],
+					"sid": 417990267718722
+				}
+			],
+			"sid": 937558826017101
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "NATURE BAR",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 985335694166802,
+							"parameters": {
+								"variable": "NATURE1",
+								"comparison": 0,
+								"value": "30"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "ecobar",
+							"sid": 412884894813196,
+							"parameters": {
+								"animation": "\"30\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 182257661779448
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 345441740835433,
+							"parameters": {
+								"variable": "NATURE1",
+								"comparison": 0,
+								"value": "60"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "ecobar",
+							"sid": 468689080275410,
+							"parameters": {
+								"animation": "\"60\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 950828194157442
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 493358854309028,
+							"parameters": {
+								"variable": "NATURE1",
+								"comparison": 0,
+								"value": "100"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "ecobar",
+							"sid": 956801006768404,
+							"parameters": {
+								"animation": "\"90\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 596745997286059
+				}
+			],
+			"sid": 145299857148830
+		}
+	],
+	"sid": 484830025692789
+}

@@ -1,0 +1,108 @@
+{
+	"name": "Event HOW",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 601858404690246,
+					"parameters": {
+						"object": "xbtn"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 651087636883051
+				}
+			],
+			"actions": [
+				{
+					"id": "set-scale",
+					"objectClass": "xbtn",
+					"sid": 533975224016053,
+					"parameters": {
+						"scale": "0.65"
+					}
+				},
+				{
+					"id": "play-by-name",
+					"objectClass": "Audio",
+					"sid": 739967764267838,
+					"parameters": {
+						"folder": "sounds",
+						"audio-file-name": "\"hover\"",
+						"loop": "not-looping",
+						"volume": "20",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 434012859687223
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 754163790186151,
+					"parameters": {
+						"object": "xbtn"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-scale",
+					"objectClass": "xbtn",
+					"sid": 289268681898297,
+					"parameters": {
+						"scale": "0.6"
+					}
+				}
+			],
+			"sid": 534980518364833
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 663754185343192,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "xbtn"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play-by-name",
+					"objectClass": "Audio",
+					"sid": 714350586578697,
+					"parameters": {
+						"folder": "sounds",
+						"audio-file-name": "\"click\"",
+						"loop": "not-looping",
+						"volume": "20",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"callFunction": "HOMELAYOUT",
+					"sid": 998689376427386
+				}
+			],
+			"sid": 830478887050172
+		}
+	],
+	"sid": 652874662194400
+}
